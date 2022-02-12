@@ -18,14 +18,12 @@
         <li><a class="grey-text" href="../index.html">Inicio</a></li>
         <li><a class="grey-text" href="../menu.html">Menú</a></li>
         <li><a class="grey-text" href="#">Delivery</a></li>
-        <li><a class="grey-text" href="#">Contáctanos</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
         <li><a href="../index.html" class="active">Inicio</a></li>
         <li><a href="#">Menú</a></li>
         <li><a href="#">Delivery</a></li>
-        <li><a href="#">Contáctanos</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger orange-text"><i class="material-icons">menu</i></a>
     </div>
@@ -56,70 +54,7 @@
                           <th>Precio</th>
                       </tr>
                     </thead>
-            
-                    <tbody>
-                      <tr>
-                        <td>Nachos de Pollo</td>
-                        <td>C$ 200.00</td>
-                      </tr>
-                      <tr>
-                        <td>Nachos de Res</td>
-                        <td>C$ 200.00</td>
-                      </tr>
-                      <tr>
-                        <td>Nachos de Pollo</td>
-                        <td>C$ 200.00</td>
-                      </tr>
-                      <tr>
-                        <td>Orden de 3 Quesadillas</td>
-                        <td>C$ 130.00</td>
-                      </tr>
-                      <tr>
-                        <td>Orden de 3 Quesadillas + Papas</td>
-                        <td>C$ 170.00</td>
-                      </tr>
-                      <tr>
-                        <td>Orden de 2 Burritos</td>
-                        <td>C$ 120.00</td>
-                      </tr>
-                      <tr>
-                        <td>Orden de 2 Burritos + Papas</td>
-                        <td>C$ 170.00</td>
-                      </tr>
-                      <tr>
-                        <td>Orden de 2 Mulitas</td>
-                        <td>C$ 120.00</td>
-                      </tr>
-                      <tr>
-                        <td>Orden de 3 tacos</td>
-                        <td>C$ 150.00</td>
-                      </tr>
-                      <tr>
-                        <td>Orden de 3 Tacos al Pastor</td>
-                        <td>C$ 160.00</td>
-                      </tr>
-                      <tr>
-                        <td>Chilaquil de Pollo</td>
-                        <td>C$ 150.00</td>
-                      </tr>
-                      <tr>
-                        <td>Chilaquil de Res</td>
-                        <td>C$ 150.00</td>
-                      </tr>
-                      <tr>
-                        <td>Chilaquil Mixto</td>
-                        <td>C$ 150.00</td>
-                      </tr>
-                      <tr>
-                        <td>Hamburguesa (Niño) + Papa
-                        </td>
-                        <td>C$ 100.00</td>
-                      </tr>
-                      <tr>
-                        <td>Hamburguesa (Adulto) + Papa
-                        </td>
-                        <td>C$ 150.00</td>
-                      </tr>
+                    <tbody id="mexican-menu-table">
                     </tbody>
                   </table>
                 </div>
@@ -127,19 +62,75 @@
             </li>
             <li>
               <div class="collapsible-header"><i class="material-icons">local_dining</i>Combos</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              <div class="collapsible-body">
+                <div class="">
+                  <h5 class="grey-text center">Combos</h5>
+                  <table class="highlight">
+                    <thead>
+                      <tr>
+                          <th>Platillo</th>
+                          <th>Precio</th>
+                      </tr>
+                    </thead>
+                    <tbody id="menu-combo-table">
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </li>
             <li>
               <div class="collapsible-header"><i class="material-icons">dinner_dining</i>Comida a la Carta</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              <div class="collapsible-body">
+                <div class="">
+                  <h5 class="grey-text center">Comida a la carta</h5>
+                  <table class="highlight">
+                    <thead>
+                      <tr>
+                          <th>Platillo</th>
+                          <th>Precio</th>
+                      </tr>
+                    </thead>
+                    <tbody id="menu-carte-table">
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </li>
             <li>
               <div class="collapsible-header"><i class="material-icons">icecream</i>Extras</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              <div class="collapsible-body">
+                <div class="">
+                  <h5 class="grey-text center">Extras</h5>
+                  <table class="highlight">
+                    <thead>
+                      <tr>
+                          <th>Platillo</th>
+                          <th>Precio</th>
+                      </tr>
+                    </thead>
+                    <tbody id="menu-extra-table">
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </li>
             <li>
               <div class="collapsible-header"><i class="material-icons">local_drink</i>Bebidas</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              <div class="collapsible-body">
+                <div class="">
+                  <h5 class="grey-text center">Bebidas</h5>
+                  <table class="highlight">
+                    <thead>
+                      <tr>
+                          <th>Platillo</th>
+                          <th>Precio</th>
+                      </tr>
+                    </thead>
+                    <tbody id="menu-drink-table">
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -177,6 +168,8 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="../js/materialize.js"></script>
   <script src="../js/init.js"></script>
+  <script type="module" src="../js/firebase.js"></script>
+  <script type="module" src="../js/app.js"></script>
   <script>  M.AutoInit();</script>
   </body>
 </html>
